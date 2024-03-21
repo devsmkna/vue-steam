@@ -1,45 +1,65 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faBell, faDownload, faUsers } from '@fortawesome/free-solid-svg-icons'
+import type { User } from '@/api/types'
+import ProfileHeader from '@/components/ProfileHeader.vue'
+import ButtonHeader from '@/components/ButtonHeader.vue'
 
 const isLogged = ref<boolean>(false)
+const user = ref<User | null>(null)
 
-// check if logged
-// if logged: isLogged true, get user data
+const loginHandler = () => {
+  isLogged.value = !isLogged.value
+
+  if (!isLogged.value) {
+    user.value = null
+  }
+
+  // get user data
+  user.value = {
+    username: 'exmachnadeus',
+    avatar: 'https://store.akamai.steamstatic.com/public/images/v6/avatar_default.jpg',
+    status: 'online',
+    lastSeen: '2 days ago',
+    games: 0,
+    name: 'Davide Visco',
+    wallet: 0.06,
+    level: 7,
+    place: 'Catania, Italy',
+    currency: '€'
+  }
+}
 </script>
 
 <template>
   <header class="main-header">
     <div class="d-flex align-items-baseline align-self-end">
-      <button type="button" class="btn btn-sm btn-install">
-        <img
-          src="https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1"
-          alt="install steam"
-          class="mb-1 me-2"
-        />
+      <ButtonHeader
+        :class="{ 'text-capitalize': true, 'btn-cta': !isLogged, 'btn-border': isLogged }"
+      >
+        <FontAwesomeIcon :icon="faDownload" />
         Install Steam
-      </button>
+      </ButtonHeader>
 
       <div v-if="!isLogged">
-        <button type="button" class="btn btn-sm" @click="isLogged = true">Login</button>
+        <ButtonHeader @click="loginHandler"> Login </ButtonHeader>
         |
-        <button
-          type="button"
-          class="btn btn-sm dropdown-toggle"
-          v-if="!isLogged"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
+        <ButtonHeader class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Language
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="#" class="dropdown-item">English</a></li>
-        </ul>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item text-capitalize">English</a></li>
+          </ul>
+        </ButtonHeader>
       </div>
 
-      <button type="button" class="btn" v-if="isLogged">Visuale Famiglia</button>
-      <button type="button" class="btn" v-if="isLogged">Notifiche</button>
-      <button type="button" class="btn" v-if="isLogged">Account</button>
-      <button type="button" class="btn" v-if="isLogged" @click="isLogged = false">Logout</button>
+      <ButtonHeader v-if="isLogged" class="btn-border" :class="{ 'btn-cta': isLogged }">
+        <FontAwesomeIcon :icon="faUsers" />
+      </ButtonHeader>
+      <ButtonHeader v-if="isLogged" class="btn-border" :class="{ 'btn-cta': isLogged }">
+        <FontAwesomeIcon :icon="faBell" />
+      </ButtonHeader>
+      <ProfileHeader v-if="isLogged && user" :user="user" :loginHandler="loginHandler" />
     </div>
 
     <nav class="nav align-items-baseline">
@@ -50,11 +70,11 @@ const isLogged = ref<boolean>(false)
         />
       </RouterLink>
       <RouterLink to="/">Store</RouterLink>
-      <RouterLink to="/not-found">Community</RouterLink>
-      <RouterLink to="/profile" v-if="isLogged">USERNAME</RouterLink>
-      <RouterLink to="/not-found" v-if="isLogged">Chat</RouterLink>
-      <RouterLink to="/profile" v-if="!isLogged">About</RouterLink>
-      <RouterLink to="/not-found">Support</RouterLink>
+      <RouterLink to="/community">Community</RouterLink>
+      <RouterLink to="/profile" v-if="isLogged">{{ user && user.username }}</RouterLink>
+      <RouterLink to="/chat" v-if="isLogged">Chat</RouterLink>
+      <RouterLink to="/about" v-if="!isLogged">About</RouterLink>
+      <RouterLink to="/support">Support</RouterLink>
     </nav>
   </header>
 </template>
@@ -107,17 +127,20 @@ nav {
   }
 }
 
-.btn-sm {
-  padding: 0.15rem 0.5rem;
-  margin: 0;
+.btn {
+  padding: 0.1rem 0.6rem;
+  margin: 0.1rem;
   border-radius: 0;
   text-transform: lowercase;
   font-size: 0.75rem;
 }
 
-.btn-install {
+.btn-border {
+  background-color: #3d4450;
+}
+
+.btn-cta {
   background-color: #5c7e10;
-  text-transform: capitalize;
   color: white;
 }
 </style>

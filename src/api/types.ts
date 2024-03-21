@@ -29,3 +29,16 @@ export type Genre = {
   id: number
   name: string
 }
+
+export type User = {
+  username: string
+  avatar: string
+  status: string
+  lastSeen: string
+  games: number
+  name: string
+  wallet: number
+  level: number
+  place: string
+  currency: string
+}

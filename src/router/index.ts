@@ -11,11 +11,24 @@ const router = createRouter({
     },
     {
       path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+      redirect: '/not-found'
+    },
+    {
+      path: '/community',
+      redirect: '/not-found'
+    },
+    {
+      path: '/profile',
+      name: 'profile',
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/support',
+      redirect: '/not-found'
+    },
+    {
+      path: '/chat',
+      redirect: '/not-found'
     },
     {
       path: '/not-found',
