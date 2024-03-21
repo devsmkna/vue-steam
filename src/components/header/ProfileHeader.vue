@@ -1,16 +1,8 @@
 <script setup lang="ts">
-import ButtonHeader from './ButtonHeader.vue'
-
-defineProps({
-  user: {
-    type: Object,
-    required: true
-  },
-  loginHandler: {
-    type: Function,
-    required: true
-  }
-})
+import { user, logout } from '@/utils'
+import { RouterLink } from 'vue-router'
+import ButtonHeader from '@/components/header/ButtonHeader.vue'
+import ProfileAvatar from '@/components/ProfileAvatar.vue'
 </script>
 
 <template>
@@ -24,15 +16,20 @@ defineProps({
       {{ user.username }}
       <ul class="dropdown-menu">
         <li>
-          <a href="/" class="dropdown-item text-capitalize" @click="() => loginHandler()">Logout</a>
+          <RouterLink to="/" class="dropdown-item text-capitalize" @click="logout"
+            >Logout</RouterLink
+          >
         </li>
       </ul>
     </ButtonHeader>
 
     <ButtonHeader v-if="user">
-      {{ user.wallet + user.currency }}
+      {{ user.wallet + ' ' + user.currency }}
     </ButtonHeader>
   </div>
+  <RouterLink to="/profile">
+    <ProfileAvatar size="35px" :showFrame="true" />
+  </RouterLink>
 </template>
 
 <style scoped lang="scss">
@@ -43,10 +40,11 @@ div {
 }
 
 .btn {
-  padding: 0.1rem 0.6rem;
-  margin: 0 0.1rem;
+  padding: 0.1rem 0.8rem;
+  margin: 0 0.2rem;
   border-radius: 0;
   text-transform: lowercase;
   font-size: 0.75rem;
+  line-height: 0.9rem;
 }
 </style>

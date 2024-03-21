@@ -33,6 +33,7 @@ export type Genre = {
 export type User = {
   username: string
   avatar: string
+  frame: string
   status: string
   lastSeen: string
   games: number
