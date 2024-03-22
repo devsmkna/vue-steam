@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { user, login } from '@/utils'
+import { user, login, lang, changeLanguage } from '@/common/utils'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faBell, faDownload, faUsers } from '@fortawesome/free-solid-svg-icons'
 import ProfileHeader from '@/components/header/ProfileHeader.vue'
@@ -10,16 +10,20 @@ import ButtonHeader from '@/components/header/ButtonHeader.vue'
   <div class="nav-global">
     <ButtonHeader class="text-capitalize" :class="{ 'btn-cta': !user, 'btn-border': user }">
       <FontAwesomeIcon :icon="faDownload" />
-      Install Steam
+      {{ lang.global.install }}
     </ButtonHeader>
 
     <div v-if="!user">
-      <ButtonHeader @click="login"> Login </ButtonHeader>
+      <ButtonHeader @click="login"> {{ lang.global.login }} </ButtonHeader>
       |
       <ButtonHeader class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        Language
+        {{ lang.global.language }}
         <ul class="dropdown-menu">
-          <li><a href="#" class="dropdown-item text-capitalize">English</a></li>
+          <li v-for="(code, name) in lang.languages" :key="name">
+            <a href="#" class="dropdown-item text-capitalize" @click="changeLanguage(code)">
+              {{ name }}
+            </a>
+          </li>
         </ul>
       </ButtonHeader>
     </div>
@@ -73,3 +77,4 @@ import ButtonHeader from '@/components/header/ButtonHeader.vue'
   color: white;
 }
 </style>
+@/common/utils

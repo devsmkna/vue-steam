@@ -1,8 +1,22 @@
 export type APIResponse = {
+  hero: Hero[]
+  price: Price[]
   games: Game[]
   developers: Developer[]
   publishers: Publisher[]
   genres: Genre[]
+}
+
+export type Hero = {
+  id: number
+  gameId: number
+  description: string
+}
+
+export type Price = {
+  gameId: number
+  price: number
+  priceDiscount: number
 }
 
 export type Game = {
@@ -42,4 +56,26 @@ export type User = {
   level: number
   place: string
   currency: string
+}
+
+export type Navigator = {
+  store: string
+  profile: string
+  support: string
+  chat: string
+  community: string
+  about: string
+}
+
+export type Message = {
+  global: {
+    install: string
+    language: string
+    login: string
+    logout: string
+  }
+  navigator: Navigator
+  languages: {
+    [key: string]: string
+  }
 }

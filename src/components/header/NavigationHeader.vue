@@ -1,40 +1,38 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import { user } from '@/utils'
+import { user, lang } from '@/common/utils'
+import type { Navigator } from '@/common/types'
 
-const navigator = [
-  {
-    name: 'Store',
+type Nav = {
+  [key in keyof Navigator]: {
+    path: string
+    isLogged?: boolean
+  }
+}
+
+const navigator: Nav = {
+  store: {
     path: '/'
   },
-
-  {
-    name: 'Community',
+  community: {
     path: '/community'
   },
-
-  {
-    name: user.value?.username || 'Profile',
+  profile: {
     path: '/profile',
     isLogged: true
   },
-
-  {
-    name: 'Chat',
+  chat: {
     path: '/chat',
     isLogged: true
   },
-
-  {
-    name: 'About',
+  about: {
     path: '/about',
     isLogged: false
   },
-  {
-    name: 'Support',
+  support: {
     path: '/support'
   }
-]
+}
 </script>
 
 <template>
@@ -45,9 +43,9 @@ const navigator = [
         alt="Steam logo"
       />
     </RouterLink>
-    <template v-for="{ name, path, isLogged } in navigator" :key="name">
+    <template v-for="({ path, isLogged }, name) in navigator" :key="name">
       <RouterLink :to="path" v-if="isLogged === undefined || isLogged === Boolean(user)">
-        {{ name }}
+        {{ lang.navigator[name] }}
       </RouterLink>
     </template>
   </nav>
@@ -86,3 +84,4 @@ nav {
   }
 }
 </style>
+@/common/utils

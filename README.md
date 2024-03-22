@@ -4,24 +4,6 @@ Vue Project for Steve Jobs Academy Course 21 Exam. In this project I try to recr
 
 # Components
 
-Header
-
-- logo
-- menu
-  - negozio
-  - comunità
-  - profilo
-  - chat
-  - assistenza
-- CTA
-  - installa steam
-  - visione famiglia
-  - notifiche
-  - profilo
-    - nome
-    - prezzo
-    - avatar
-
 NEGOZIO
 
 Navbar
@@ -35,10 +17,6 @@ Navbar
 - searchbar
 - CTA
   - lista dei desideri
-
-HeroBanner
-
-- children (video/image)
 
 PriceBanner
 

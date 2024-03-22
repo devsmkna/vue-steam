@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { user, logout } from '@/utils'
 import { RouterLink } from 'vue-router'
+import { user, logout, lang } from '@/common/utils'
 import ButtonHeader from '@/components/header/ButtonHeader.vue'
 import ProfileAvatar from '@/components/ProfileAvatar.vue'
 </script>
@@ -16,9 +16,9 @@ import ProfileAvatar from '@/components/ProfileAvatar.vue'
       {{ user.username }}
       <ul class="dropdown-menu">
         <li>
-          <RouterLink to="/" class="dropdown-item text-capitalize" @click="logout"
-            >Logout</RouterLink
-          >
+          <RouterLink to="/" class="dropdown-item text-capitalize" @click="logout">{{
+            lang.global.logout
+          }}</RouterLink>
         </li>
       </ul>
     </ButtonHeader>
@@ -48,3 +48,4 @@ div {
   line-height: 0.9rem;
 }
 </style>
+@/common/utils

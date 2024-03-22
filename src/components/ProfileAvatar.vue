@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { user } from '@/utils'
+import { user } from '@/common/utils'
 defineProps({
   size: {
     type: String,
@@ -38,3 +38,4 @@ defineProps({
   }
 }
 </style>
+@/common/utils

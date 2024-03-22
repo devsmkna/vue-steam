@@ -1,11 +1,35 @@
 {
+  "hero": [
+    {
+      "id": 1,
+      "gameId": 1,
+      "description": "Aviable now"
+    },
+    {
+      "id": 2,
+      "gameId": 2,
+      "description": "Aviable now"
+    }
+  ],
+  "price": [
+    {
+      "gameId": 1,
+      "price": 9.99,
+      "discountPercentage": 0
+    },
+    {
+      "gameId": 2,
+      "price": 9.99,
+      "discountPercentage": 50
+    }
+  ],
   "games": [
     {
       "id": 1,
       "title": "ARK: Survival Of The Fittest",
       "genres": [1, 2, 3, 4, 5, 6],
       "publisher": 1,
-      "description": "ARK: Survival of the Fittest is a Multiplayer Online Survival Arena (MOSA) game that pits as many as 72 combatants against one another in the struggle for survival in a harsh, changing environment packed with deadly creatures, &#x201C;Evolution Events,&#x201D; and other players.",
+      "description": "ARK: Survival of the Fittest is a Multiplayer Online Survival Arena (MOSA) game that pits as many as 72 combatants against one another in the struggle for survival in a harsh, changing environment packed with deadly creatures, “Evolution Events,” and other players.",
       "developer": 1,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/407530/header.jpg?t=1567712233"
     },
@@ -50,7 +74,7 @@
       "title": "Arma 3",
       "genres": [1, 7, 8, 6],
       "publisher": 6,
-      "description": "Experience true combat gameplay in a massive military sandbox. Deploying a wide variety of single- and multiplayer content, over 20 vehicles and 40 weapons, and limitless opportunities for content creation, this is the PC&#x2019;s premier military game. Authentic, diverse, open - Arma 3 sends you to war.",
+      "description": "Experience true combat gameplay in a massive military sandbox. Deploying a wide variety of single- and multiplayer content, over 20 vehicles and 40 weapons, and limitless opportunities for content creation, this is the PC’s premier military game. Authentic, diverse, open - Arma 3 sends you to war.",
       "developer": 6,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/107410/header.jpg?t=1582546432"
     },
@@ -68,7 +92,7 @@
       "title": "Batman™: Arkham Asylum Game of the Year Edition",
       "genres": [1, 2],
       "publisher": 8,
-      "description": "Experience what it&#x2019;s like to be Batman and face off against Gotham&apos;s greatest villians. Explore every inch of Arkham Asylum and roam freely on the infamous island.",
+      "description": "Experience what it’s like to be Batman and face off against Gotham&apos;s greatest villians. Explore every inch of Arkham Asylum and roam freely on the infamous island.",
       "developer": 8,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/35140/header.jpg?t=1569358035"
     },
@@ -95,7 +119,7 @@
       "title": "Bear With Me: The Lost Robots",
       "genres": [2, 9, 3],
       "publisher": 11,
-      "description": "Bear With Me: The Lost Robots is an all new prequel chapter featuring Amber&#x2019;s brother Flint and the callous detective Ted E. Bear. Take to the gritty and bustling undergrounds of Paper City, discovering new characters and rich lore leading up to the events of the first 3 episodes of Bear With Me.",
+      "description": "Bear With Me: The Lost Robots is an all new prequel chapter featuring Amber’s brother Flint and the callous detective Ted E. Bear. Take to the gritty and bustling undergrounds of Paper City, discovering new characters and rich lore leading up to the events of the first 3 episodes of Bear With Me.",
       "developer": 11,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/1050000/header.jpg?t=1573066046"
     },
@@ -113,7 +137,7 @@
       "title": "Battlefleet Gothic: Armada 2",
       "genres": [6],
       "publisher": 5,
-      "description": "Battlefleet Gothic: Armada 2 is the new real-time strategy game adapted from Games Workshop&#x2019;s famous tabletop game that portrays the epic space battles of the Warhammer 40,000 universe.",
+      "description": "Battlefleet Gothic: Armada 2 is the new real-time strategy game adapted from Games Workshop’s famous tabletop game that portrays the epic space battles of the Warhammer 40,000 universe.",
       "developer": 13,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/573100/header.jpg?t=1571674851"
     },
@@ -158,7 +182,7 @@
       "title": "Battlerite",
       "genres": [1],
       "publisher": 16,
-      "description": "BATTLERITE&#x200B; &#x200B;is&#x200B; &#x200B;an&#x200B; &#x200B;action-packed&#x200B; &#x200B;team&#x200B; &#x200B;arena&#x200B; &#x200B;brawler.&#x200B; &#x200B;Experience&#x200B; &#x200B;the&#x200B; &#x200B;unique&#x200B; &#x200B;combination&#x200B; &#x200B;of&#x200B; top-down&#x200B; &#x200B;shooter&#x200B; meets&#x200B; &#x200B;fast-paced&#x200B; &#x200B;fighting&#x200B; &#x200B;game and challenge &#x200B;friends&#x200B; &#x200B;and&#x200B; foes&#x200B; &#x200B;in&#x200B; &#x200B;a&#x200B; &#x200B;battle&#x200B; &#x200B;of reaction. The Arena awaits!",
+      "description": "BATTLERITE​ ​is​ ​an​ ​action-packed​ ​team​ ​arena​ ​brawler.​ ​Experience​ ​the​ ​unique​ ​combination​ ​of​ top-down​ ​shooter​ meets​ ​fast-paced​ ​fighting​ ​game and challenge ​friends​ ​and​ foes​ ​in​ ​a​ ​battle​ ​of reaction. The Arena awaits!",
       "developer": 17,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/504370/header.jpg?t=1556921507"
     },
@@ -284,7 +308,7 @@
       "title": "AO International Tennis",
       "genres": [15],
       "publisher": 26,
-      "description": "AO International Tennis is the most authentic, community-focused tennis game ever. Make use of comprehensive PlayFace&#x2122;, Stadium Creator, and other customisation features to put a photo-realistic version of yourself in your local tennis competition, up against the greats, including Rafael Nadal.",
+      "description": "AO International Tennis is the most authentic, community-focused tennis game ever. Make use of comprehensive PlayFace™, Stadium Creator, and other customisation features to put a photo-realistic version of yourself in your local tennis competition, up against the greats, including Rafael Nadal.",
       "developer": 27,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/758410/header.jpg?t=1572496262"
     },
@@ -311,7 +335,7 @@
       "title": "Assassin’s Creed® Unity",
       "genres": [1, 2],
       "publisher": 4,
-      "description": "Assassin&#x2019;s Creed&#xAE; Unity tells the story of Arno, a young man who embarks upon an extraordinary journey to expose the true powers behind the French Revolution. In the brand new co-op mode, you and your friends will also be thrown in the middle of a ruthless struggle for the fate of a nation.",
+      "description": "Assassin’s Creed® Unity tells the story of Arno, a young man who embarks upon an extraordinary journey to expose the true powers behind the French Revolution. In the brand new co-op mode, you and your friends will also be thrown in the middle of a ruthless struggle for the fate of a nation.",
       "developer": 30,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/289650/header.jpg?t=1575045099"
     },
@@ -347,7 +371,7 @@
       "title": "Amazing Cultivation Simulator / 了不起的修仙模拟器",
       "genres": [3, 5, 8, 6],
       "publisher": 29,
-      "description": "&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x4FEE;&#x4ED9;&#x6E38;&#x620F;&#xFF0C;&#x5EFA;&#x7ACB;&#x5C5E;&#x4E8E;&#x4F60;&#x7684;&#x4ED9;&#x95E8;&#xFF0C;&#x62DB;&#x6536;&#x5929;&#x8D44;&#x7EDD;&#x4EE3;&#x7684;&#x5F1F;&#x5B50;&#xFF0C;&#x5EFA;&#x9020;&#x7F8E;&#x8F6E;&#x7F8E;&#x5942;&#x7684;&#x5EFA;&#x7B51;&#xFF0C;&#x6536;&#x96C6;&#x5404;&#x79CD;&#x795E;&#x5999;&#x7684;&#x4FEE;&#x884C;&#x529F;&#x6CD5;&#x3001;&#x7075;&#x836F;&#x6CD5;&#x5B9D;&#x3001;&#x795E;&#x901A;&#x79D8;&#x7C4D;&#x3002;&#x642D;&#x5EFA;&#x4FEE;&#x884C;&#x5B9D;&#x5730;&#xFF0C;&#x8BA9;&#x95E8;&#x4E0B;&#x5F1F;&#x5B50;&#x9010;&#x6B65;&#x4FEE;&#x884C;&#x7A81;&#x7834;&#x3002;&#x7B51;&#x57FA;&#x3001;&#x70BC;&#x6C14;&#x3001;&#x7ED3;&#x4E39;&#x3001;&#x5143;&#x795E;&#x7B49;&#x5883;&#x754C;&#xFF0C;&#x6700;&#x7EC8;&#x5EA6;&#x8FC7;&#x5929;&#x52AB;&#x98DE;&#x5347;&#x6210;&#x4ED9;&#x3002;&#x5C06;&#x4F60;&#x7684;&#x95E8;&#x6D3E;&#x4ECE;&#x4E00;&#x65E0;&#x6240;&#x6709;&#x7684;&#x4E61;&#x6751;&#x805A;&#x843D;&#xFF0C;&#x7ECF;&#x8425;&#x6210;&#x5A01;&#x540D;&#x8D6B;&#x8D6B;&#x7684;&#x9AD8;&#x95E8;&#x5927;&#x6D3E;&#x3002;",
+      "description": "独一无二的修仙游戏，建立属于你的仙门，招收天资绝代的弟子，建造美轮美奂的建筑，收集各种神妙的修行功法、灵药法宝、神通秘籍。搭建修行宝地，让门下弟子逐步修行突破。筑基、炼气、结丹、元神等境界，最终度过天劫飞升成仙。将你的门派从一无所有的乡村聚落，经营成威名赫赫的高门大派。",
       "developer": 34,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/955900/header.jpg?t=1582171273"
     },
@@ -374,7 +398,7 @@
       "title": "Company of Heroes",
       "genres": [1, 6],
       "publisher": 31,
-      "description": "Delivering a visceral WWII gaming experience, Company of Heroes redefines RTS by bringing the sacrifice of heroic soldiers, war-ravaged environments, and dynamic battlefields to life. Please visit the &quot;Company of Heroes - Legacy Edition&quot; page for additional user reviews.",
+      "description": "Delivering a visceral WWII gaming experience, Company of Heroes redefines RTS by bringing the sacrifice of heroic soldiers, war-ravaged environments, and dynamic battlefields to life. Please visit the \"Company of Heroes - Legacy Edition\" page for additional user reviews.",
       "developer": 37,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/228200/header.jpg?t=1570195772"
     },
@@ -383,7 +407,7 @@
       "title": "Assetto Corsa Competizione",
       "genres": [14, 8, 15],
       "publisher": 32,
-      "description": "Assetto Corsa Competizione is the new official Blancpain GT Series videogame. Thanks to the extraordinary quality of simulation, the game will allow you to experience the real atmosphere of the FIA &#x200B;&#x200B;GT3 homologated championship, competing against official drivers, teams, cars and circuits.",
+      "description": "Assetto Corsa Competizione is the new official Blancpain GT Series videogame. Thanks to the extraordinary quality of simulation, the game will allow you to experience the real atmosphere of the FIA ​​GT3 homologated championship, competing against official drivers, teams, cars and circuits.",
       "developer": 38,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/805550/header.jpg?t=1580836221"
     },
@@ -455,7 +479,7 @@
       "title": "Assetto Corsa",
       "genres": [14, 8, 15],
       "publisher": 37,
-      "description": "Assetto Corsa v1.16 introduces the new &quot;Laguna Seca&quot; laser-scanned track, 7 new cars among which the eagerly awaited Alfa Romeo Giulia Quadrifoglio! Check the changelog for further info!",
+      "description": "Assetto Corsa v1.16 introduces the new \"Laguna Seca\" laser-scanned track, 7 new cars among which the eagerly awaited Alfa Romeo Giulia Quadrifoglio! Check the changelog for further info!",
       "developer": 38,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/244210/header.jpg?t=1574932208"
     },
@@ -491,7 +515,7 @@
       "title": "Assassin’s Creed® Odyssey",
       "genres": [1, 2, 3],
       "publisher": 4,
-      "description": "Choose your fate in Assassin&apos;s Creed&#xAE; Odyssey. From outcast to living legend, embark on an odyssey to uncover the secrets of your past and change the fate of Ancient Greece.",
+      "description": "Choose your fate in Assassin&apos;s Creed® Odyssey. From outcast to living legend, embark on an odyssey to uncover the secrets of your past and change the fate of Ancient Greece.",
       "developer": 48,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/812140/header.jpg?t=1582146584"
     },
@@ -500,7 +524,7 @@
       "title": "Counter-Strike: Source",
       "genres": [1, 7],
       "publisher": 14,
-      "description": "Counter-Strike: Source blends Counter-Strike&apos;s award-winning teamplay action with the advanced technology of Source&#x2122; technology.",
+      "description": "Counter-Strike: Source blends Counter-Strike&apos;s award-winning teamplay action with the advanced technology of Source™ technology.",
       "developer": 15,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/240/header.jpg?t=1580852525"
     },
@@ -509,7 +533,7 @@
       "title": "Closers",
       "genres": [10, 4, 5],
       "publisher": 41,
-      "description": "Closers is an episodic anime action RPG bursting with spectacular battles and steeped in an epic storyline. Choose your Closer, gather your friends or dive in solo, and use your amazing powers to protect Earth, in mankind&#x2019;s desperate battle against horrific monsters from another dimension!",
+      "description": "Closers is an episodic anime action RPG bursting with spectacular battles and steeped in an epic storyline. Choose your Closer, gather your friends or dive in solo, and use your amazing powers to protect Earth, in mankind’s desperate battle against horrific monsters from another dimension!",
       "developer": 49,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/215830/header.jpg?t=1568146837"
     },
@@ -536,7 +560,7 @@
       "title": "Commandos 2 - HD Remaster",
       "genres": [6],
       "publisher": 43,
-      "description": "Relive the real-time tactics masterpiece that defined the genre like no other: Commandos 2 - HD Remaster is a true homage to one of gaming&#x2019;s most celebrated masterpieces.",
+      "description": "Relive the real-time tactics masterpiece that defined the genre like no other: Commandos 2 - HD Remaster is a true homage to one of gaming’s most celebrated masterpieces.",
       "developer": 51,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/1100410/header_alt_assets_0.jpg?t=1583406183"
     },
@@ -581,7 +605,7 @@
       "title": "ATOMEGA™",
       "genres": [1, 3],
       "publisher": 4,
-      "description": "Grow, fight, collect and evade in the last cosmic arena the very end of time. Acquire MASS to evolve your EXOFORM from the nimble ATOM to the godlike OMEGA and compete for fun and dominance in a fast-paced, multiplayer shooter. ATOMEGA&#x2122; !",
+      "description": "Grow, fight, collect and evade in the last cosmic arena the very end of time. Acquire MASS to evolve your EXOFORM from the nimble ATOM to the godlike OMEGA and compete for fun and dominance in a fast-paced, multiplayer shooter. ATOMEGA™ !",
       "developer": 55,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/619880/header.jpg?t=1517337080"
     },
@@ -590,7 +614,7 @@
       "title": "AVICII Invector",
       "genres": [9, 3],
       "publisher": 47,
-      "description": "Soar through vocal melodies, sweep each fade and attack every beat in 25 of AVICII&#x2019;s biggest hits, in this enthralling futuristic rhythm-action experience &#x2013; AVICII Invector.",
+      "description": "Soar through vocal melodies, sweep each fade and attack every beat in 25 of AVICII’s biggest hits, in this enthralling futuristic rhythm-action experience – AVICII Invector.",
       "developer": 56,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/986800/header.jpg?t=1579517097"
     },
@@ -689,7 +713,7 @@
       "title": "Black Future '88",
       "genres": [1, 2, 3],
       "publisher": 55,
-      "description": "Black Future &#x2019;88 is a Synth-Punk roguelike 2D action Shooter. Vertically climb an always evolving procedural tower to reach the top and kill its insane owner&#x2026;before your heart explodes. Shoot, slash, dash and upgrade yourself to survive the endless waves of Homicidal AI, Traps &amp; Colossal Wardens.",
+      "description": "Black Future ’88 is a Synth-Punk roguelike 2D action Shooter. Vertically climb an always evolving procedural tower to reach the top and kill its insane owner…before your heart explodes. Shoot, slash, dash and upgrade yourself to survive the endless waves of Homicidal AI, Traps & Colossal Wardens.",
       "developer": 67,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/751820/header.jpg?t=1580900489"
     },
@@ -698,7 +722,7 @@
       "title": "Dungeon Defenders: Awakened",
       "genres": [3, 5, 6],
       "publisher": 56,
-      "description": "Dungeon Defenders: Awakened is co-op Tower Defense combined with epic Action RPG combat. You&#x2019;re able to join forces with up to four players to take on a never-ending army of orcs, demons, and dragons! Are your defenses strong enough to save the world of Etheria?",
+      "description": "Dungeon Defenders: Awakened is co-op Tower Defense combined with epic Action RPG combat. You’re able to join forces with up to four players to take on a never-ending army of orcs, demons, and dragons! Are your defenses strong enough to save the world of Etheria?",
       "developer": 68,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/1101190/header.jpg?t=1582308089"
     },
@@ -788,7 +812,7 @@
       "title": "Far Cry® 4",
       "genres": [1, 2, 7],
       "publisher": 4,
-      "description": "Hidden in the towering Himalayas lies Kyrat, a country steeped in tradition and violence. You are Ajay Ghale. Traveling to Kyrat to fulfill your mother&#x2019;s dying wish, you find yourself caught up in a civil war to overthrow the oppressive regime of dictator Pagan Min.",
+      "description": "Hidden in the towering Himalayas lies Kyrat, a country steeped in tradition and violence. You are Ajay Ghale. Traveling to Kyrat to fulfill your mother’s dying wish, you find yourself caught up in a civil war to overthrow the oppressive regime of dictator Pagan Min.",
       "developer": 77,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/298110/header.jpg?t=1575377085"
     },
@@ -833,7 +857,7 @@
       "title": "FrostRunner",
       "genres": [1, 10, 3, 12],
       "publisher": 67,
-      "description": "FrostRunner is a first-person platformer &#x201C;speedrunning&#x201D; game, where the player rapidly completes platforming challenges before the timer runs out. Using their tether tool, players compete to finish each of the 36 unique levels as quickly as possible and earn a place at the top of the leaderboards.",
+      "description": "FrostRunner is a first-person platformer “speedrunning” game, where the player rapidly completes platforming challenges before the timer runs out. Using their tether tool, players compete to finish each of the 36 unique levels as quickly as possible and earn a place at the top of the leaderboards.",
       "developer": 82,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/934840/header.jpg?t=1566744887"
     },
@@ -887,7 +911,7 @@
       "title": "DCL - The Game",
       "genres": [14, 8],
       "publisher": 71,
-      "description": "DCL - The Game is the official videogame of the Drone Champions League - the world&#x2019;s leading series for Drone Racing Teams. Fly the original tracks from DCL and experience Drone Racing like a professional pilot. Join the flying revolution!",
+      "description": "DCL - The Game is the official videogame of the Drone Champions League - the world’s leading series for Drone Racing Teams. Fly the original tracks from DCL and experience Drone Racing like a professional pilot. Join the flying revolution!",
       "developer": 86,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/964570/header.jpg?t=1582193560"
     },
@@ -896,7 +920,7 @@
       "title": "EXAPUNKS",
       "genres": [3, 13, 8],
       "publisher": 72,
-      "description": "The year is 1997. You used to be a hacker, but now you have the phage. You made a deal: one hack, one dose. There&#x2019;s nothing left to lose&#x2026; except your life.",
+      "description": "The year is 1997. You used to be a hacker, but now you have the phage. You made a deal: one hack, one dose. There’s nothing left to lose… except your life.",
       "developer": 87,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/716490/header.jpg?t=1573782831"
     },
@@ -914,7 +938,7 @@
       "title": "Dead Cells",
       "genres": [1, 3, 12],
       "publisher": 74,
-      "description": "Dead Cells is a rogue-lite, metroidvania inspired, action-platformer. You&apos;ll explore a sprawling, ever-changing castle... assuming you&#x2019;re able to fight your way past its keepers in 2D souls-lite combat. No checkpoints. Kill, die, learn, repeat.",
+      "description": "Dead Cells is a rogue-lite, metroidvania inspired, action-platformer. You&apos;ll explore a sprawling, ever-changing castle... assuming you’re able to fight your way past its keepers in 2D souls-lite combat. No checkpoints. Kill, die, learn, repeat.",
       "developer": 89,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/588650/header_alt_assets_7.jpg?t=1581606652"
     },
@@ -968,7 +992,7 @@
       "title": "FTL: Faster Than Light",
       "genres": [9, 3, 8, 6],
       "publisher": 79,
-      "description": "This &quot;spaceship simulation roguelike-like&quot; allows you to take your ship and crew on an adventure through a randomly generated galaxy filled with glory and bitter defeat.",
+      "description": "This \"spaceship simulation roguelike-like\" allows you to take your ship and crew on an adventure through a randomly generated galaxy filled with glory and bitter defeat.",
       "developer": 94,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/212680/header.jpg?t=1580423188"
     },
@@ -995,7 +1019,7 @@
       "title": "Forager",
       "genres": [1, 2, 9, 3, 8],
       "publisher": 44,
-      "description": "The highly popular and quirky &quot;idle game that you want to actively keep playing&quot;. Explore, craft, gather &amp; manage resources, find secrets and build your base out of nothing! Buy land to explore and expand!",
+      "description": "The highly popular and quirky \"idle game that you want to actively keep playing\". Explore, craft, gather & manage resources, find secrets and build your base out of nothing! Buy land to explore and expand!",
       "developer": 97,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/751780/header.jpg?t=1580088330"
     },
@@ -1013,7 +1037,7 @@
       "title": "Everreach: Project Eden",
       "genres": [1, 7, 3, 5],
       "publisher": 82,
-      "description": "Take on the role of Nora Harwood, member of Everreach&#x2019;s Security Division, on a mission to secure the colonization process of Eden and investigate mysterious incidents! Everreach: Project Eden is a fast-paced, story-driven action-RPG set on the visually stunning Planet Eden.",
+      "description": "Take on the role of Nora Harwood, member of Everreach’s Security Division, on a mission to secure the colonization process of Eden and investigate mysterious incidents! Everreach: Project Eden is a fast-paced, story-driven action-RPG set on the visually stunning Planet Eden.",
       "developer": 99,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/915670/header.jpg?t=1580137184"
     },
@@ -1040,7 +1064,7 @@
       "title": "Enter the Gungeon",
       "genres": [1, 2, 3],
       "publisher": 85,
-      "description": "Enter the Gungeon is a bullet hell dungeon crawler following a band of misfits seeking to shoot, loot, dodge roll and table-flip their way to personal absolution by reaching the legendary Gungeon&#x2019;s ultimate treasure: the gun that can kill the past.",
+      "description": "Enter the Gungeon is a bullet hell dungeon crawler following a band of misfits seeking to shoot, loot, dodge roll and table-flip their way to personal absolution by reaching the legendary Gungeon’s ultimate treasure: the gun that can kill the past.",
       "developer": 102,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/311690/header.jpg?t=1575923806"
     },
@@ -1058,7 +1082,7 @@
       "title": "Far Cry® 5",
       "genres": [1, 2, 7],
       "publisher": 4,
-      "description": "Welcome to Hope County, Montana, home to a fanatical doomsday cult known as Eden&#x2019;s Gate. Stand up to cult leader Joseph Seed &amp; his siblings, the Heralds, to spark the fires of resistance &amp; liberate the besieged community.",
+      "description": "Welcome to Hope County, Montana, home to a fanatical doomsday cult known as Eden’s Gate. Stand up to cult leader Joseph Seed & his siblings, the Heralds, to spark the fires of resistance & liberate the besieged community.",
       "developer": 4,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/552520/header.jpg?t=1575655495"
     },
@@ -1076,7 +1100,7 @@
       "title": "Islands of Nyne: Battle Royale",
       "genres": [7, 1, 3, 4],
       "publisher": 88,
-      "description": "Drop into massive, alien-built arenas and begin the frantic search for weapons and gear - all while trying to stay one step ahead of the advancing plasma field&#x2026; or the sights of other contenders. ION offers its players a skill-driven, first-person-only Battle Royale all built into a unique sci-fi universe.",
+      "description": "Drop into massive, alien-built arenas and begin the frantic search for weapons and gear - all while trying to stay one step ahead of the advancing plasma field… or the sights of other contenders. ION offers its players a skill-driven, first-person-only Battle Royale all built into a unique sci-fi universe.",
       "developer": 105,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/728540/header.jpg?t=1545251662"
     },
@@ -1085,7 +1109,7 @@
       "title": "DUSK",
       "genres": [1, 3],
       "publisher": 89,
-      "description": "Battle through an onslaught of mystical backwater cultists, possessed militants &amp; even darker forces as you attempt to discover just what lurks beneath the Earth in this retro FPS inspired by the &apos;90s legends.",
+      "description": "Battle through an onslaught of mystical backwater cultists, possessed militants & even darker forces as you attempt to discover just what lurks beneath the Earth in this retro FPS inspired by the &apos;90s legends.",
       "developer": 106,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/519860/header.jpg?t=1581400216"
     },
@@ -1112,7 +1136,7 @@
       "title": "DiRT 4",
       "genres": [14, 8, 15],
       "publisher": 92,
-      "description": "DiRT 4 is all about embracing fear. It&#x2019;s about the thrill, exhilaration and adrenaline that is absolutely vital to off-road racing. It&#x2019;s about loving the feeling of pushing flat out next to a sheer cliff drop, going for the gap that&#x2019;s too small and seeing how much air you can get. Be Fearless.",
+      "description": "DiRT 4 is all about embracing fear. It’s about the thrill, exhilaration and adrenaline that is absolutely vital to off-road racing. It’s about loving the feeling of pushing flat out next to a sheer cliff drop, going for the gap that’s too small and seeing how much air you can get. Be Fearless.",
       "developer": 109,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/421020/header.jpg?t=1573486444"
     },
@@ -1166,7 +1190,7 @@
       "title": "Don't Starve",
       "genres": [2, 3, 8],
       "publisher": 97,
-      "description": "Don&#x2019;t Starve is an uncompromising wilderness survival game full of science and magic. Enter a strange and unexplored world full of strange creatures, dangers, and surprises. Gather resources to craft items and structures that match your survival style.",
+      "description": "Don’t Starve is an uncompromising wilderness survival game full of science and magic. Enter a strange and unexplored world full of strange creatures, dangers, and surprises. Gather resources to craft items and structures that match your survival style.",
       "developer": 114,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/219740/header.jpg?t=1577386240"
     },
@@ -1184,7 +1208,7 @@
       "title": "Kingdom Rush Origins",
       "genres": [3, 6],
       "publisher": 99,
-      "description": "Command your elven army and defend mystical lands from sea serpents, evil sorcerers, and wave after wave of gnoll tribesman, all with the help of brand-spankin&#x2019; new towers, heroes, and spells to fend off every last baddie.",
+      "description": "Command your elven army and defend mystical lands from sea serpents, evil sorcerers, and wave after wave of gnoll tribesman, all with the help of brand-spankin’ new towers, heroes, and spells to fend off every last baddie.",
       "developer": 116,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/816340/header.jpg?t=1560522383"
     },
@@ -1193,7 +1217,7 @@
       "title": "Endless Space® 2",
       "genres": [6],
       "publisher": 31,
-      "description": "Endless Space 2 is a Strategic Space Opera, featuring the compelling &#x201C;just one more turn&#x201D; gameplay, set in the mysterious Endless universe. As the leader of your civilization, will you impose your vision and build the greatest stellar empire?",
+      "description": "Endless Space 2 is a Strategic Space Opera, featuring the compelling “just one more turn” gameplay, set in the mysterious Endless universe. As the leader of your civilization, will you impose your vision and build the greatest stellar empire?",
       "developer": 117,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/392110/header.jpg?t=1582556003"
     },
@@ -1229,7 +1253,7 @@
       "title": "Elite Dangerous",
       "genres": [1, 2, 4, 5, 8, 6],
       "publisher": 101,
-      "description": "Take control of your own starship in a cutthroat galaxy. Elite Dangerous brings gaming&#x2019;s original open world adventure into the modern generation with a connected galaxy, evolving narrative and the entirety of the Milky Way re-created at its full galactic proportions.",
+      "description": "Take control of your own starship in a cutthroat galaxy. Elite Dangerous brings gaming’s original open world adventure into the modern generation with a connected galaxy, evolving narrative and the entirety of the Milky Way re-created at its full galactic proportions.",
       "developer": 120,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/359320/header.jpg?t=1573730884"
     },
@@ -1274,7 +1298,7 @@
       "title": "Imperator: Rome",
       "genres": [9, 8, 6],
       "publisher": 13,
-      "description": "Imperator: Rome is the newest grand strategy title from Paradox Development Studio. Set in the tumultuous centuries from Alexander&#x2019;s Successor Empires in the East to the foundation of the Roman Empire.",
+      "description": "Imperator: Rome is the newest grand strategy title from Paradox Development Studio. Set in the tumultuous centuries from Alexander’s Successor Empires in the East to the foundation of the Roman Empire.",
       "developer": 74,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/859580/header.jpg?t=1580115328"
     },
@@ -1328,7 +1352,7 @@
       "title": "LEGO® Jurassic World",
       "genres": [1, 17, 2],
       "publisher": 8,
-      "description": "Following the epic storylines of Jurassic Park, The Lost World: Jurassic Park and Jurassic Park III, as well as the highly anticipated Jurassic World, LEGO Jurassic World&#x2122; is the first videogame where players will be able to relive and experience all four Jurassic films.",
+      "description": "Following the epic storylines of Jurassic Park, The Lost World: Jurassic Park and Jurassic Park III, as well as the highly anticipated Jurassic World, LEGO Jurassic World™ is the first videogame where players will be able to relive and experience all four Jurassic films.",
       "developer": 128,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/352400/header.jpg?t=1573511428"
     },
@@ -1346,7 +1370,7 @@
       "title": "Generation Zero",
       "genres": [1, 2],
       "publisher": 106,
-      "description": "Welcome to 1980&#x2019;s Sweden. The local population has disappeared, and hostile machines roam the streets. Explore the atmospheric open world as you attempt to survive, prepare to strike back, and start unraveling the mystery. Play alone or together with up to three friends, as you discover ways to defeat the invaders.",
+      "description": "Welcome to 1980’s Sweden. The local population has disappeared, and hostile machines roam the streets. Explore the atmospheric open world as you attempt to survive, prepare to strike back, and start unraveling the mystery. Play alone or together with up to three friends, as you discover ways to defeat the invaders.",
       "developer": 130,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/704270/header.jpg?t=1579699938"
     },
@@ -1382,7 +1406,7 @@
       "title": "Forged Battalion",
       "genres": [3, 8, 6],
       "publisher": 110,
-      "description": "Customize your unique faction in a new take on real-time strategy as you fight in a variety of skirmish, solo, and multiplayer battles.&#xA0; You are not only a commander, but also an engineer &#x2013; so you have ultimate control over your faction&#x2019;s units, factories, superweapons and economy.",
+      "description": "Customize your unique faction in a new take on real-time strategy as you fight in a variety of skirmish, solo, and multiplayer battles.  You are not only a commander, but also an engineer – so you have ultimate control over your faction’s units, factories, superweapons and economy.",
       "developer": 134,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/686260/header.jpg?t=1568822448"
     },
@@ -1409,7 +1433,7 @@
       "title": "Idle Champions of the Forgotten Realms",
       "genres": [1, 2, 9, 10, 3, 6],
       "publisher": 113,
-      "description": "Idle Champions of the Forgotten Realms is a Dungeons &amp; Dragons strategy video game that brings together D&amp;D characters from novels, adventures, and multiple live streams into a single grand adventure.",
+      "description": "Idle Champions of the Forgotten Realms is a Dungeons & Dragons strategy video game that brings together D&D characters from novels, adventures, and multiple live streams into a single grand adventure.",
       "developer": 137,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/627690/header.jpg?t=1582137640"
     },
@@ -1418,7 +1442,7 @@
       "title": "LEGO® Marvel™ Super Heroes",
       "genres": [1, 2, 17],
       "publisher": 8,
-      "description": "LEGO&#xAE; Marvel&#x2122; Super Heroes features an original story crossing the entire Marvel Universe. Players take control of Iron Man, Spider-Man, the Hulk, Captain America, Wolverine and many more Marvel characters as they unite to stop Loki and a host of other Marvel villains from assembling a super-weapon capable of destroying the world.",
+      "description": "LEGO® Marvel™ Super Heroes features an original story crossing the entire Marvel Universe. Players take control of Iron Man, Spider-Man, the Hulk, Captain America, Wolverine and many more Marvel characters as they unite to stop Loki and a host of other Marvel villains from assembling a super-weapon capable of destroying the world.",
       "developer": 138,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/249130/header.jpg?t=1573497453"
     },
@@ -1427,7 +1451,7 @@
       "title": "LEGO® The Incredibles",
       "genres": [17, 1, 2],
       "publisher": 8,
-      "description": "Experience the thrilling adventures of the Parr family as they conquer crime and family life through both Disney-Pixar films The Incredibles and Incredibles&#xA0;2, in a LEGO&#xAE; world full of fun and humor.",
+      "description": "Experience the thrilling adventures of the Parr family as they conquer crime and family life through both Disney-Pixar films The Incredibles and Incredibles 2, in a LEGO® world full of fun and humor.",
       "developer": 139,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/818320/header.jpg?t=1573500526"
     },
@@ -1436,7 +1460,7 @@
       "title": "LEGO® Harry Potter: Years 1-4",
       "genres": [1, 17],
       "publisher": 8,
-      "description": "Build the adventure from Privet Drive to the Triwizard Tournament and experience the magic of the first four Harry Potter stories &#x2013; LEGO style! Explore Hogwarts&#x2122; School of Witchcraft and Wizardry, learn spells, brew potions and relive the adventures like never before with tongue-in-cheek humor and creative customization that is unique to...",
+      "description": "Build the adventure from Privet Drive to the Triwizard Tournament and experience the magic of the first four Harry Potter stories – LEGO style! Explore Hogwarts™ School of Witchcraft and Wizardry, learn spells, brew potions and relive the adventures like never before with tongue-in-cheek humor and creative customization that is unique to...",
       "developer": 139,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/21130/header.jpg?t=1573262302"
     },
@@ -1445,7 +1469,7 @@
       "title": "Homefront®: The Revolution",
       "genres": [1, 2, 7],
       "publisher": 114,
-      "description": "Homefront&#xAE;: The Revolution is an open-world first person shooter where you must lead the Resistance movement in guerrilla warfare against a superior military force.",
+      "description": "Homefront®: The Revolution is an open-world first person shooter where you must lead the Resistance movement in guerrilla warfare against a superior military force.",
       "developer": 140,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/223100/header.jpg?t=1562640869"
     },
@@ -1454,7 +1478,7 @@
       "title": "F1™ 2017",
       "genres": [8, 14],
       "publisher": 92,
-      "description": "MAKE HISTORY - Win the 2017 World Championship, break every record in the fastest ever F1&#x2122; cars, and race some of the most iconic F1 cars of the last 30 years.",
+      "description": "MAKE HISTORY - Win the 2017 World Championship, break every record in the fastest ever F1™ cars, and race some of the most iconic F1 cars of the last 30 years.",
       "developer": 109,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/515220/header.jpg?t=1573468396"
     },
@@ -1463,7 +1487,7 @@
       "title": "Grim Dawn",
       "genres": [5, 1, 2, 3],
       "publisher": 115,
-      "description": "Enter an apocalyptic fantasy world where humanity is on the brink of extinction, iron is valued above gold and trust is hard earned. This ARPG features complex character development, hundreds of unique items, crafting and quests with choice &amp; consequence.",
+      "description": "Enter an apocalyptic fantasy world where humanity is on the brink of extinction, iron is valued above gold and trust is hard earned. This ARPG features complex character development, hundreds of unique items, crafting and quests with choice & consequence.",
       "developer": 141,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/219990/header.jpg?t=1582551836"
     },
@@ -1499,7 +1523,7 @@
       "title": "Fimbul",
       "genres": [1, 2, 3],
       "publisher": 117,
-      "description": "Fimbul is a single-player comic-book, action adventure set in the final winter before Ragnar&#xF6;k, The Fimbul Winter. You play as an old berserk, travelling to J&#xF6;tunheim to fulfill his destiny, battling Trolls and Jotuns to reclaim an ancient artifact that might, just might save Midgard.",
+      "description": "Fimbul is a single-player comic-book, action adventure set in the final winter before Ragnarök, The Fimbul Winter. You play as an old berserk, travelling to Jötunheim to fulfill his destiny, battling Trolls and Jotuns to reclaim an ancient artifact that might, just might save Midgard.",
       "developer": 143,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/771690/header.jpg?t=1551445815"
     },
@@ -1535,7 +1559,7 @@
       "title": "LEGO® Marvel Super Heroes 2",
       "genres": [1, 2, 17],
       "publisher": 120,
-      "description": "It&apos;s about TIME! Join your favorite Super Heroes and Super Villains from different eras and realities as they go head-to-head with the time-traveling Kang the Conqueror in the all-new, original adventure, LEGO&#xAE; Marvel Super Heroes 2!",
+      "description": "It&apos;s about TIME! Join your favorite Super Heroes and Super Villains from different eras and realities as they go head-to-head with the time-traveling Kang the Conqueror in the all-new, original adventure, LEGO® Marvel Super Heroes 2!",
       "developer": 139,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/647830/header.jpg?t=1573498074"
     },
@@ -1544,7 +1568,7 @@
       "title": "HITMAN™2",
       "genres": [1],
       "publisher": 121,
-      "description": "Travel the globe and track your targets across exotic sandbox locations in HITMAN&#x2122; 2. From sun-drenched streets to dark and dangerous rainforests, nowhere is safe from the world&#x2019;s most creative assassin, Agent 47 in the ultimate spy thriller story.",
+      "description": "Travel the globe and track your targets across exotic sandbox locations in HITMAN™ 2. From sun-drenched streets to dark and dangerous rainforests, nowhere is safe from the world’s most creative assassin, Agent 47 in the ultimate spy thriller story.",
       "developer": 146,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/863550/header.jpg?t=1579001301"
     },
@@ -1553,7 +1577,7 @@
       "title": "MotoGP™19",
       "genres": [14, 15],
       "publisher": 102,
-      "description": "Race with official 2019 Championship riders! Have fun with the new multiplayer experience and become Race Director. Challenge the new AI, take a ride through the history of the MotoGP&#x2122; and unleash your creativity with the graphic editors.",
+      "description": "Race with official 2019 Championship riders! Have fun with the new multiplayer experience and become Race Director. Challenge the new AI, take a ride through the history of the MotoGP™ and unleash your creativity with the graphic editors.",
       "developer": 124,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/984780/header.jpg?t=1574345282"
     },
@@ -1580,7 +1604,7 @@
       "title": "Kerbal Space Program",
       "genres": [3, 8],
       "publisher": 124,
-      "description": "In Kerbal Space Program, take charge of the space program for the alien race known as the Kerbals. You have access to an array of parts to assemble fully-functional spacecraft that flies (or doesn&#x2019;t) based on realistic aerodynamic and orbital physics.",
+      "description": "In Kerbal Space Program, take charge of the space program for the alien race known as the Kerbals. You have access to an array of parts to assemble fully-functional spacecraft that flies (or doesn’t) based on realistic aerodynamic and orbital physics.",
       "developer": 148,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/220200/header.jpg?t=1571698097"
     },
@@ -1589,7 +1613,7 @@
       "title": "LEGO® DC Super-Villains",
       "genres": [1, 2, 17],
       "publisher": 8,
-      "description": "It&apos;s good to be bad&#x2026; Embark on an all-new&#xA0;DC/LEGO&#xAE; adventure by becoming the best villain the universe has seen. Players will create and play as an all-new super-villain throughout the game, unleashing mischievous antics and wreaking havoc in an action-packed story.",
+      "description": "It&apos;s good to be bad… Embark on an all-new DC/LEGO® adventure by becoming the best villain the universe has seen. Players will create and play as an all-new super-villain throughout the game, unleashing mischievous antics and wreaking havoc in an action-packed story.",
       "developer": 139,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/829110/header.jpg?t=1578506825"
     },
@@ -1625,7 +1649,7 @@
       "title": "Myst V: End of Ages",
       "genres": [2, 9, 13],
       "publisher": 127,
-      "description": "The Grand Finale of the greatest adventure! Decide the fate of a civilization in this triumphant final chapter to the Myst saga. Embark on an epic journey into the heart of a shattered empire as the only explorer who can still save it&#x2014; or destroy it with the wrong choices.",
+      "description": "The Grand Finale of the greatest adventure! Decide the fate of a civilization in this triumphant final chapter to the Myst saga. Embark on an epic journey into the heart of a shattered empire as the only explorer who can still save it— or destroy it with the wrong choices.",
       "developer": 151,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/208110/header.jpg?t=1539644659"
     },
@@ -1643,7 +1667,7 @@
       "title": "GUILTY GEAR Xrd -REVELATOR-",
       "genres": [1],
       "publisher": 57,
-      "description": "Astonishing 3D cell animations and overwhelming content volume, the next-generation fighting game &quot;GUILTY GEAR Xrd -REVELATOR-&quot; is now out on Steam! Total cast of 23 unique characters, and tons of game modes, get ready to ROCK!",
+      "description": "Astonishing 3D cell animations and overwhelming content volume, the next-generation fighting game \"GUILTY GEAR Xrd -REVELATOR-\" is now out on Steam! Total cast of 23 unique characters, and tons of game modes, get ready to ROCK!",
       "developer": 69,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/520440/header.jpg?t=1573764687"
     },
@@ -1652,7 +1676,7 @@
       "title": "LEGO® MARVEL's Avengers",
       "genres": [1, 2, 17],
       "publisher": 8,
-      "description": "Avengers Assemble! The best-selling LEGO&#xAE; MARVEL videogame franchise returns with a new action-packed, Super Hero adventure.",
+      "description": "Avengers Assemble! The best-selling LEGO® MARVEL videogame franchise returns with a new action-packed, Super Hero adventure.",
       "developer": 138,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/405310/header.jpg?t=1573498458"
     },
@@ -1670,7 +1694,7 @@
       "title": "Narcosis",
       "genres": [2, 3],
       "publisher": 129,
-      "description": "Survival, horror at the sunless depths of the Pacific Ocean: Stranded on the seafloor with low light and few tools, an industrial diver takes desperate steps to surface before his oxygen &#x2014; and sanity &#x2014; give out.",
+      "description": "Survival, horror at the sunless depths of the Pacific Ocean: Stranded on the seafloor with low light and few tools, an industrial diver takes desperate steps to surface before his oxygen — and sanity — give out.",
       "developer": 154,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/366870/header.jpg?t=1531522061"
     },
@@ -1697,7 +1721,7 @@
       "title": "MUSYNX",
       "genres": [3, 8],
       "publisher": 132,
-      "description": "Indie&#xA0;rhythm&#xA0;game&#xA0;MUSYNX&#xA0;now&#xA0;on&#xA0;STEAM! Real&#xA0;&quot;KEY&quot;&#xA0;Sound&#xA0;System, Classic&#xA0;Gameplay, Unique&#xA0;Visual&#xA0;Themes&#xA0;and&#xA0;Constant Music&#xA0;Updates! MUSYNX&#xA0;is waiting&#xA0;for&#xA0;you!",
+      "description": "Indie rhythm game MUSYNX now on STEAM! Real \"KEY\" Sound System, Classic Gameplay, Unique Visual Themes and Constant Music Updates! MUSYNX is waiting for you!",
       "developer": 157,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/952040/header.jpg?t=1579663087"
     },
@@ -1706,7 +1730,7 @@
       "title": "Moonlighter",
       "genres": [1, 2, 3],
       "publisher": 133,
-      "description": "Moonlighter is an Action RPG with rogue-lite elements that demonstrates two sides of the coin &#x2013; revealing everyday routines of Will, an adventurous shopkeeper that secretly dreams of becoming a hero.",
+      "description": "Moonlighter is an Action RPG with rogue-lite elements that demonstrates two sides of the coin – revealing everyday routines of Will, an adventurous shopkeeper that secretly dreams of becoming a hero.",
       "developer": 158,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/606150/header.jpg?t=1583743386"
     },
@@ -1742,7 +1766,7 @@
       "title": "Mosaic",
       "genres": [2, 3],
       "publisher": 137,
-      "description": "Enter a world that&#x2019;s utterly surreal and eerily familiar. Escape the mundanity of your existence in an experience that will stay with you. Mosaic is a narrative-driven modern adventure game with a story that lasts about 2-3 hours.",
+      "description": "Enter a world that’s utterly surreal and eerily familiar. Escape the mundanity of your existence in an experience that will stay with you. Mosaic is a narrative-driven modern adventure game with a story that lasts about 2-3 hours.",
       "developer": 162,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/349270/header.jpg?t=1579647315"
     },
@@ -1751,7 +1775,7 @@
       "title": "Disco Elysium",
       "genres": [2, 3, 5],
       "publisher": 138,
-      "description": "Disco Elysium is a multi award-winning role playing game. You&#x2019;re a detective with a unique skill system at your disposal and a whole city block to carve your path across. Interrogate unforgettable characters, crack murders or take bribes. Become a hero or an absolute disaster of a human being.",
+      "description": "Disco Elysium is a multi award-winning role playing game. You’re a detective with a unique skill system at your disposal and a whole city block to carve your path across. Interrogate unforgettable characters, crack murders or take bribes. Become a hero or an absolute disaster of a human being.",
       "developer": 163,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/632470/header.jpg?t=1583156787"
     },
@@ -1760,7 +1784,7 @@
       "title": "Metro: Last Light Redux",
       "genres": [1, 7],
       "publisher": 114,
-      "description": "It is the year 2034. Beneath the ruins of post-apocalyptic Moscow, in the tunnels of the Metro, the remnants of mankind are besieged by deadly threats from outside &#x2013; and within. Mutants stalk the catacombs beneath the desolate surface, and hunt amidst the poisoned skies above.",
+      "description": "It is the year 2034. Beneath the ruins of post-apocalyptic Moscow, in the tunnels of the Metro, the remnants of mankind are besieged by deadly threats from outside – and within. Mutants stalk the catacombs beneath the desolate surface, and hunt amidst the poisoned skies above.",
       "developer": 164,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/287390/header.jpg?t=1569508864"
     },
@@ -1832,7 +1856,7 @@
       "title": "Neverwinter",
       "genres": [1, 2, 10, 4, 5],
       "publisher": 143,
-      "description": "Neverwinter is a free, action MMORPG based on the acclaimed Dungeons &amp; Dragons fantasy roleplaying game. Epic stories, action combat and classic roleplaying await those heroes courageous enough to enter the fantastic world of Neverwinter!",
+      "description": "Neverwinter is a free, action MMORPG based on the acclaimed Dungeons & Dragons fantasy roleplaying game. Epic stories, action combat and classic roleplaying await those heroes courageous enough to enter the fantastic world of Neverwinter!",
       "developer": 169,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/109600/header.jpg?t=1579643780"
     },
@@ -1940,7 +1964,7 @@
       "title": "Deceit",
       "genres": [1, 10, 3],
       "publisher": 153,
-      "description": "Deceit tests your instincts at trust and deception in an action-filled, multiplayer first-person shooter. You wake up in unknown surroundings to the sound of the Game Master&#x2019;s unfamiliar voice, surrounded by five others. A third of your group have been infected with a virus, but who will escape?",
+      "description": "Deceit tests your instincts at trust and deception in an action-filled, multiplayer first-person shooter. You wake up in unknown surroundings to the sound of the Game Master’s unfamiliar voice, surrounded by five others. A third of your group have been infected with a virus, but who will escape?",
       "developer": 179,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/466240/header.jpg?t=1583283139"
     },
@@ -2039,7 +2063,7 @@
       "title": "realMyst: Masterpiece Edition",
       "genres": [2, 9, 3, 13],
       "publisher": 127,
-      "description": "realMyst: Masterpiece Edition is a beautifully updated version of realMYST for today&#x2019;s Mac and Windows computers - celebrating the 20th anniversary of Myst! The models and textures have been reconstructed to provide an amazing graphical experience.",
+      "description": "realMyst: Masterpiece Edition is a beautifully updated version of realMYST for today’s Mac and Windows computers - celebrating the 20th anniversary of Myst! The models and textures have been reconstructed to provide an amazing graphical experience.",
       "developer": 151,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/244430/header.jpg?t=1568218059"
     },
@@ -2048,7 +2072,7 @@
       "title": "Pillars of Eternity",
       "genres": [5],
       "publisher": 13,
-      "description": "Prepare to be enchanted by a world where the choices you make and the paths you choose shape your destiny. Obsidian Entertainment, the developer of Fallout: New Vegas&#x2122; and South Park: The Stick of Truth&#x2122;, together with Paradox Interactive is proud to present Pillars of Eternity.",
+      "description": "Prepare to be enchanted by a world where the choices you make and the paths you choose shape your destiny. Obsidian Entertainment, the developer of Fallout: New Vegas™ and South Park: The Stick of Truth™, together with Paradox Interactive is proud to present Pillars of Eternity.",
       "developer": 186,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/291650/header.jpg?t=1561476579"
     },
@@ -2102,7 +2126,7 @@
       "title": "Ice Age: Scrat's Nutty Adventure",
       "genres": [2, 17],
       "publisher": 162,
-      "description": "Scrat&#x2019;s on a brand new quest! Sabre-tooth squirrel Scrat is on a nutty quest! His prized possession is locked inside an ancient Scratazon Temple &#x2013; and the only way to get it back is to retrieve four legendary Crystal Nuts, scattered across the land.",
+      "description": "Scrat’s on a brand new quest! Sabre-tooth squirrel Scrat is on a nutty quest! His prized possession is locked inside an ancient Scratazon Temple – and the only way to get it back is to retrieve four legendary Crystal Nuts, scattered across the land.",
       "developer": 191,
       "coverImage": "https://steamcdn-a.akamaihd.net/steam/apps/751060/header.jpg?t=1579695097"
     }
