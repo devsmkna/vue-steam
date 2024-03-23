@@ -14,7 +14,7 @@ import ButtonHeader from '@/components/header/ButtonHeader.vue'
     </ButtonHeader>
 
     <div v-if="!user">
-      <ButtonHeader @click="login"> {{ lang.global.login }} </ButtonHeader>
+      <ButtonHeader @click="$router.push('/login')"> {{ lang.global.login }} </ButtonHeader>
       |
       <ButtonHeader class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
         {{ lang.global.language }}

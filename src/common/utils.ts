@@ -3,8 +3,10 @@ import { useFetch } from '@vueuse/core'
 import type { Genre, Message, User } from '@/common/types'
 import { lang as globalLang } from '@/common/lang'
 import type { APIResponseError, Hero, Price, Game, Developer, Publisher } from '@/common/types'
+import router from '@/router'
 
 export const user = ref<User | null>(null)
+console.log('user: ', user)
 export const currentLang = ref<string>('en')
 export const lang = ref<Message>(globalLang[currentLang.value])
 
@@ -84,6 +86,7 @@ export const login = () => {
     place: 'Catania, Italy',
     currency: '€'
   }
+  router.push('/')
 }
 
 export const logout = () => {

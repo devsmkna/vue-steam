@@ -1,44 +1,52 @@
 <script setup lang="ts">
-import { hero } from '@/common/hero'
-import { currentLang, gamesDB, gamesError } from '@/common/utils'
-import { heroesDB, heroesError } from '@/common/utils'
-import { type Game, type Hero } from '@/common/types'
-import HeroBanner from '@/components/shop/HeroBanner.vue'
-import HeroCardCarousel from '@/components/shop/HeroCardCarousel.vue'
-import HeroCard from '@/components/shop/HeroCard.vue'
 import router from '@/router'
+import { hero } from '@/common/hero'
+import { user, currentLang, lang } from '@/common/utils'
+import { heroesDB, heroesError } from '@/common/utils'
+import { gamesDB, gamesError } from '@/common/utils'
+import { type Game, type Hero } from '@/common/types'
+import HeroBanner from '@/components/shop/hero/HeroBanner.vue'
+import HeroCardCarousel from '@/components/shop/hero/HeroCardCarousel.vue'
+import HeroCard from '@/components/shop/hero/HeroCard.vue'
+import GameList from '@/components/shop/GameList.vue'
 
 if (heroesError.value || gamesError.value) {
   router.push('/not-found')
 }
 
-const heroGames: Hero[] = heroesDB.value || []
-const games: Game[] =
+const heroGames: Game[] =
   (gamesDB.value &&
     gamesDB.value.filter((game: Game) =>
-      heroGames.find(({ gameId }: Hero) => gameId === +game.id)
+      heroesDB.value?.find(({ gameId }: Hero) => gameId === +game.id)
     )) ||
   []
+
+const games: Game[] = gamesDB.value || []
 </script>
 
 <template>
-  <main>
-    <HeroBanner>
-      <video :src="hero[currentLang]" autoplay muted loop />
-    </HeroBanner>
-
-    <aside></aside>
-
-    <HeroCardCarousel class="me-auto ms-auto" :length="games.length">
+  <HeroBanner>
+    <video :src="hero[currentLang]" autoplay muted loop />
+  </HeroBanner>
+  <main class="container">
+    <HeroCardCarousel class="me-auto ms-auto" :length="heroGames.length">
       <HeroCard
         class="carousel-item"
-        v-for="(game, index) in games"
+        v-for="(game, index) in heroGames"
         :class="{ active: index === 0 }"
         :key="index"
         :game="game"
-        :description="heroGames.find(({ gameId }: Hero) => gameId === +game.id)?.description || ''"
+        :description="
+          lang.card.hero[
+            heroesDB?.find(({ gameId }: Hero) => gameId === +game.id)?.description || 'default'
+          ]
+        "
+        :currency="user?.currency || '$'"
+        @click="router.push(`/app/${game.id}`)"
       />
     </HeroCardCarousel>
+
+    <GameList class="me-auto ms-auto game-list" :games="games" />
   </main>
 </template>
 
@@ -48,5 +56,8 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.game-list {
+  max-width: var(--max-width);
 }
 </style>

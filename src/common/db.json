@@ -2,25 +2,45 @@
   "heroes": [
     {
       "id": 1,
-      "gameId": 1,
-      "description": "Aviable now"
+      "gameId": 5,
+      "description": "aviable"
     },
     {
       "id": 2,
       "gameId": 2,
-      "description": "Aviable now"
+      "description": "early"
+    },
+    {
+      "id": 3,
+      "gameId": 8,
+      "description": ""
+    },
+    {
+      "id": 4,
+      "gameId": 51,
+      "description": "aviable"
+    },
+    {
+      "id": 5,
+      "gameId": 4,
+      "description": "aviable"
     }
   ],
   "prices": [
     {
       "gameId": 1,
       "price": 9.99,
+      "discountPercentage": 50
+    },
+    {
+      "gameId": 8,
+      "price": 39.99,
       "discountPercentage": 0
     },
     {
-      "gameId": 2,
-      "price": 9.99,
-      "discountPercentage": 50
+      "gameId": 4,
+      "price": 79.99,
+      "discountPercentage": 23
     }
   ],
   "games": [

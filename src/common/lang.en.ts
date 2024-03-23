@@ -12,11 +12,27 @@ export const en: Message = {
     profile: 'Profile',
     support: 'Support',
     chat: 'Chat',
-    community: 'Commuinty',
+    community: 'Community',
     about: 'About'
   },
   languages: {
     'English (English)': 'en',
     'Italian (Italiano)': 'it'
+  },
+  card: {
+    free: 'Free to play',
+    hero: {
+      default: 'Play now',
+      aviable: 'Available now',
+      early: 'Early access'
+    }
+  },
+  bread: {
+    root: 'All games'
+  },
+  login: {
+    username: 'Sign in with account name',
+    password: 'password',
+    button: 'sign in'
   }
 }

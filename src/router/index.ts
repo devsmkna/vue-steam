@@ -9,14 +9,25 @@ const router = createRouter({
       component: () => import('@/views/ShopView.vue')
     },
     {
-      path: '/profile',
-      name: 'profile',
-      component: () => import('@/views/AboutView.vue')
+      path: '/app/:id',
+      name: 'app',
+      component: () => import('@/views/GameView.vue'),
+      props: true
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('@/views/LoginView.vue')
     },
     {
       path: '/not-found',
       name: '404',
       component: () => import('@/views/404View.vue')
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      redirect: '/not-found'
     },
     {
       path: '/about',

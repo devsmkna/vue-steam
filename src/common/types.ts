@@ -23,7 +23,7 @@ export type Hero = {
 export type Price = {
   gameId: number
   price: number
-  priceDiscount: number
+  discountPercentage: number
 }
 
 export type Game = {
@@ -84,5 +84,20 @@ export type Message = {
   navigator: Navigator
   languages: {
     [key: string]: string
+  }
+  card: {
+    free: string
+    hero: {
+      default: string
+      [key: string]: string
+    }
+  }
+  bread: {
+    root: string
+  }
+  login: {
+    username: string
+    password: string
+    button: string
   }
 }

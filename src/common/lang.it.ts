@@ -18,5 +18,21 @@ export const it: Message = {
   languages: {
     'Inglese (English)': 'en',
     'Italiano (Italiano)': 'it'
+  },
+  card: {
+    free: 'Gratuito',
+    hero: {
+      default: 'Gioca ora',
+      aviable: 'Disponibile adesso',
+      early: 'Accesso anticipato'
+    }
+  },
+  bread: {
+    root: 'Tutti i giochi'
+  },
+  login: {
+    username: 'Accedi con il nome utente',
+    password: 'password',
+    button: 'accedi'
   }
 }

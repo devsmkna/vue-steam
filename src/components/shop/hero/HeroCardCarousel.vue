@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 defineProps({
   length: {
     type: Number,
@@ -36,8 +39,7 @@ defineProps({
       data-bs-target="#hero-card-carousel"
       data-bs-slide="prev"
     >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <FontAwesomeIcon :icon="faChevronLeft" size="3x" />
     </button>
     <button
       class="carousel-control-next"
@@ -45,8 +47,7 @@ defineProps({
       data-bs-target="#hero-card-carousel"
       data-bs-slide="next"
     >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <FontAwesomeIcon :icon="faChevronRight" size="3x" />
     </button>
   </div>
 </template>
@@ -55,31 +56,33 @@ defineProps({
 .carousel {
   width: 1200px;
   position: relative;
+  padding: 3.5rem 0;
+  background-image: url(https://store.akamai.steamstatic.com/public/images/v6/home/cluster_bg.png?v=1);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-bottom: 1px solid rgba($color: black, $alpha: 0.1);
 
   .carousel-inner {
-    width: 80%;
-    height: 350px;
+    width: 81%;
+    height: 360px;
     background-color: red;
   }
 
   .carousel-indicators {
-    position: absolute;
-    bottom: -3rem;
-
     button {
       width: 15px;
-      height: 10px;
-      border-radius: 4px;
-      background-color: hsla(202, 60%, 100%, 0.2);
+      height: 9px;
+      border-radius: 2px;
+      background-color: hsla(202, 60%, 100%, 0.2) !important;
       border: none;
       margin: 0 2px;
 
       &:hover {
-        background-color: hsla(202, 60%, 100%, 0.3);
+        background-color: hsla(202, 60%, 100%, 0.3) !important;
       }
 
       &.active {
-        background-color: hsla(202, 60%, 100%, 0.4);
+        background-color: hsla(202, 60%, 100%, 0.4) !important;
       }
     }
   }
