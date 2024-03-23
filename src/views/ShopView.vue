@@ -1,15 +1,24 @@
 <script setup lang="ts">
 import { hero } from '@/common/hero'
-import { currentLang, games as gamesDB, hero as heroDB } from '@/common/utils'
-import type { Game, Hero } from '@/common/types'
+import { currentLang, gamesDB, gamesError } from '@/common/utils'
+import { heroesDB, heroesError } from '@/common/utils'
+import { type Game, type Hero } from '@/common/types'
 import HeroBanner from '@/components/shop/HeroBanner.vue'
 import HeroCardCarousel from '@/components/shop/HeroCardCarousel.vue'
 import HeroCard from '@/components/shop/HeroCard.vue'
+import router from '@/router'
 
-const heroGames: Hero[] = heroDB.value
-const games: Game[] = heroGames.map(({ gameId }: Hero) =>
-  gamesDB.value.find((game: Game) => gameId === +game.id)
-)
+if (heroesError.value || gamesError.value) {
+  router.push('/not-found')
+}
+
+const heroGames: Hero[] = heroesDB.value || []
+const games: Game[] =
+  (gamesDB.value &&
+    gamesDB.value.filter((game: Game) =>
+      heroGames.find(({ gameId }: Hero) => gameId === +game.id)
+    )) ||
+  []
 </script>
 
 <template>

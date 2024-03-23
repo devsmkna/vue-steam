@@ -5,5 +5,7 @@ import MainHeader from '@/components/header/MainHeader.vue'
 
 <template>
   <MainHeader />
-  <RouterView />
+  <Suspense>
+    <RouterView />
+  </Suspense>
 </template>

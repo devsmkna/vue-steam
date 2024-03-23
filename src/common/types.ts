@@ -7,6 +7,13 @@ export type APIResponse = {
   genres: Genre[]
 }
 
+export type APIResponseError = {
+  __v_isShallow: boolean
+  __v_isRef: boolean
+  _rawValue: string | null
+  _value: string | null
+}
+
 export type Hero = {
   id: number
   gameId: number

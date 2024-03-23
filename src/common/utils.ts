@@ -1,32 +1,72 @@
-import { ref } from 'vue'
+import { ref, type Ref } from 'vue'
 import { useFetch } from '@vueuse/core'
-import type { Message, User } from '@/common/types'
+import type { Genre, Message, User } from '@/common/types'
 import { lang as globalLang } from '@/common/lang'
+import type { APIResponseError, Hero, Price, Game, Developer, Publisher } from '@/common/types'
 
 export const user = ref<User | null>(null)
 export const currentLang = ref<string>('en')
 export const lang = ref<Message>(globalLang[currentLang.value])
 
-export const { data: hero, error: heroError } = useFetch('http://localhost:3000/hero').get().json()
-export const { data: price, error: priceError } = useFetch('http://localhost:3000/price')
-  .get()
-  .json()
-export const { data: games, error: gamesError } = useFetch('http://localhost:3000/games')
-  .get()
-  .json()
-export const { data: developers, error: developersError } = useFetch(
-  'http://localhost:3000/developers'
-)
-  .get()
-  .json()
-export const { data: publishers, error: publishersError } = useFetch(
-  'http://localhost:3000/publishers'
-)
-  .get()
-  .json()
-export const { data: genres, error: genresError } = useFetch('http://localhost:3000/genres')
-  .get()
-  .json()
+export const {
+  data: heroesDB,
+  isFetching: heroesFetching,
+  error: heroesError
+}: {
+  data: Ref<Hero[] | null>
+  isFetching: Ref<boolean>
+  error: Ref<APIResponseError | null>
+} = await useFetch('http://localhost:3000/heroes', { timeout: 1000 }).json()
+
+export const {
+  data: pricesDB,
+  isFetching: pricesFetching,
+  error: pricesError
+}: {
+  data: Ref<Price[] | null>
+  isFetching: Ref<boolean>
+  error: Ref<APIResponseError | null>
+} = await useFetch('http://localhost:3000/prices', { timeout: 1000 }).json()
+
+export const {
+  data: gamesDB,
+  isFetching: gamesFetching,
+  error: gamesError
+}: {
+  data: Ref<Game[] | null>
+  isFetching: Ref<boolean>
+  error: Ref<APIResponseError | null>
+} = await useFetch('http://localhost:3000/games', { timeout: 1000 }).json()
+
+export const {
+  data: developersDB,
+  isFetching: developersFetching,
+  error: developersError
+}: {
+  data: Ref<Developer[] | null>
+  isFetching: Ref<boolean>
+  error: Ref<APIResponseError | null>
+} = await useFetch('http://localhost:3000/developers', { timeout: 1000 }).json()
+
+export const {
+  data: publishersDB,
+  isFetching: publishersFetching,
+  error: publishersError
+}: {
+  data: Ref<Publisher[] | null>
+  isFetching: Ref<boolean>
+  error: Ref<APIResponseError | null>
+} = await useFetch('http://localhost:3000/publishers', { timeout: 1000 }).json()
+
+export const {
+  data: genresDB,
+  isFetching: genresFetching,
+  error: genresError
+}: {
+  data: Ref<Genre[] | null>
+  isFetching: Ref<boolean>
+  error: Ref<APIResponseError | null>
+} = await useFetch('http://localhost:3000/genres', { timeout: 1000 }).json()
 
 export const login = () => {
   user.value = {
