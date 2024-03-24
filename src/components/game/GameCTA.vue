@@ -9,7 +9,6 @@ const { name, price, currency } = defineProps<{
   currency: string
 }>()
 
-const cta = price && price.price > 0 ? lang.value.game.buy : lang.value.game.play
 </script>
 
 <template>
