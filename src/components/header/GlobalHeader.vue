@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { user, login, lang, changeLanguage } from '@/common/utils'
+import { user, lang, changeLanguage } from '@/common/utils'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faBell, faDownload, faUsers } from '@fortawesome/free-solid-svg-icons'
 import ProfileHeader from '@/components/header/ProfileHeader.vue'
@@ -58,6 +58,7 @@ import ButtonHeader from '@/components/header/ButtonHeader.vue'
   border-radius: 0;
   text-transform: lowercase;
   font-size: 0.75rem;
+  border: 0 !important;
 
   svg {
     font-size: 0.9rem;
