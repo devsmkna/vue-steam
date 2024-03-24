@@ -13,7 +13,7 @@ import ButtonHeader from '@/components/header/ButtonHeader.vue'
       {{ lang.global.install }}
     </ButtonHeader>
 
-    <div v-if="!user">
+    <div v-if="!user" class="d-flex align-items-baseline">
       <ButtonHeader @click="$router.push('/login')"> {{ lang.global.login }} </ButtonHeader>
       |
       <ButtonHeader class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
