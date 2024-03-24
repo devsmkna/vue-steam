@@ -5,7 +5,8 @@ export const en: Message = {
     install: 'Install Steam',
     language: 'Language',
     login: 'Login',
-    logout: 'Logout'
+    logout: 'Logout',
+    nogame: 'No games found'
   },
   navigator: {
     store: 'Store',
@@ -34,5 +35,11 @@ export const en: Message = {
     username: 'Sign in with account name',
     password: 'password',
     button: 'sign in'
+  },
+  game: {
+    developer: 'Developer',
+    publisher: 'Publisher',
+    buy: 'Buy',
+    play: 'Play now'
   }
 }

@@ -6,7 +6,6 @@ import type { APIResponseError, Hero, Price, Game, Developer, Publisher } from '
 import router from '@/router'
 
 export const user = ref<User | null>(null)
-console.log('user: ', user)
 export const currentLang = ref<string>('en')
 export const lang = ref<Message>(globalLang[currentLang.value])
 

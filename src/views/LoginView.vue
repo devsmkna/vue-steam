@@ -24,7 +24,7 @@ import loginQR from '@/assets/login.png'
 <style scoped lang="scss">
 .form-container {
   background-color: #181a21;
-  height: 89vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,17 +33,18 @@ import loginQR from '@/assets/login.png'
 
   .login-wrapper {
     background-color: #181a21;
-    width: 30vw;
+    width: 35vw;
     margin: 0 auto;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
 
     form {
+      flex: 3 1 0;
       width: 100%;
       margin: 0 auto;
       display: flex;
@@ -51,7 +52,6 @@ import loginQR from '@/assets/login.png'
       justify-content: center;
       align-items: flex-start;
       gap: 0.25rem;
-      padding: 1rem;
 
       input {
         width: 100%;
@@ -66,20 +66,34 @@ import loginQR from '@/assets/login.png'
         text-transform: uppercase;
         font-size: 0.85rem;
         font-weight: 500;
+        color: gray;
 
         &:first-child {
           color: #1a9fff;
         }
       }
+
+      button {
+        width: 60%;
+        padding: 1rem;
+        background: linear-gradient(90deg, #06bfff 0%, #2d73ff 100%);
+        border-radius: 2px;
+        color: white;
+        border: none;
+        align-self: center;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        margin: 1rem 0;
+      }
     }
 
     .login-qr {
+      flex: 1 1 0;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: white;
       border-radius: 1rem;
-      width: 50%;
       padding: 1rem;
 
       img {

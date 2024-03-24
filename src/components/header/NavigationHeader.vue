@@ -59,8 +59,8 @@ nav {
   a {
     display: block;
     text-transform: uppercase;
+    color: var(--color-text);
     text-decoration: none;
-    color: #dcdedf;
     font-size: 1.1rem;
     padding: 1rem 0 0;
 

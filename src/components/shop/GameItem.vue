@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import { user } from '@/common/utils'
 import { type Game, type Genre, type Price } from '@/common/types'
 import { genresDB, pricesDB } from '@/common/utils'
@@ -14,7 +15,10 @@ const price = pricesDB.value?.find((price: Price) => price.gameId === +game.id)
 </script>
 
 <template>
-  <div class="game-item">
+  <RouterLink
+    class="game-item"
+    :to="{ name: 'app', params: { id: game.id, title: game.title.replace(/\s/g, '_') } }"
+  >
     <div class="game-item-media">
       <img :src="game.coverImage" :alt="game.title" />
     </div>
@@ -25,7 +29,7 @@ const price = pricesDB.value?.find((price: Price) => price.gameId === +game.id)
     <div class="game-item-price">
       <PriceComponent :price="price" :currency="user?.currency || '$'" />
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <style scoped lang="scss">
@@ -38,6 +42,8 @@ const price = pricesDB.value?.find((price: Price) => price.gameId === +game.id)
   background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 
   .game-item-media {
     flex: 1 1 0;

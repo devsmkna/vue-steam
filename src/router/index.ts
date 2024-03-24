@@ -9,7 +9,7 @@ const router = createRouter({
       component: () => import('@/views/ShopView.vue')
     },
     {
-      path: '/app/:id',
+      path: '/app/:id/:title',
       name: 'app',
       component: () => import('@/views/GameView.vue'),
       props: true
@@ -45,7 +45,16 @@ const router = createRouter({
       path: '/chat',
       redirect: '/not-found'
     }
-  ]
+  ],
+  scrollBehavior: (to, from, savedPosition) => {
+    return savedPosition ? savedPosition : to.hash ? { el: to.hash } : { top: 0, left: 0 }
+  }
+})
+
+router.beforeEach((to, from, next) => {
+  const title = typeof to.params.title === 'string' ? to.params.title : ''
+  document.title = to.params.title ? `${title.replace(/_/g, ' ')} | Steam` : 'Steam'
+  next()
 })
 
 export default router

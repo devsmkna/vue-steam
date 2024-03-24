@@ -42,7 +42,6 @@ const games: Game[] = gamesDB.value || []
           ]
         "
         :currency="user?.currency || '$'"
-        @click="router.push(`/app/${game.id}`)"
       />
     </HeroCardCarousel>
 

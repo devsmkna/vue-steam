@@ -18,7 +18,10 @@ const price: Price | undefined = pricesDB.value?.find((price: Price) => price.ga
 </script>
 
 <template>
-  <div class="hero-card">
+  <RouterLink
+    class="hero-card"
+    :to="{ name: 'app', params: { id: game.id, title: game.title.replace(/\s/g, '_') } }"
+  >
     <div class="hero-card-media">
       <img :src="game.coverImage" :alt="game.title" />
     </div>
@@ -28,7 +31,7 @@ const price: Price | undefined = pricesDB.value?.find((price: Price) => price.ga
       <p>{{ description }}</p>
       <PriceComponent :price="price" :currency="currency" />
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <style scoped lang="scss">
@@ -40,6 +43,8 @@ const price: Price | undefined = pricesDB.value?.find((price: Price) => price.ga
   height: 100%;
   background-color: #0b151e;
   cursor: pointer;
+  color: var(--color-text);
+  text-decoration: none;
 
   .hero-card-media {
     flex: 2 1 0;

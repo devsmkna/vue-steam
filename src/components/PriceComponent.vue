@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { lang } from '@/common/utils'
 import { type Price } from '@/common/types'
-const { price, currency } = defineProps<{ price: Price | undefined; currency: string }>()
+const { price, currency } = defineProps<{
+  price: Price | undefined
+  currency: string
+}>()
 </script>
 
 <template>

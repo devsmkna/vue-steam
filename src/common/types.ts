@@ -80,6 +80,7 @@ export type Message = {
     language: string
     login: string
     logout: string
+    nogame: string
   }
   navigator: Navigator
   languages: {
@@ -99,5 +100,11 @@ export type Message = {
     username: string
     password: string
     button: string
+  }
+  game: {
+    publisher: string
+    developer: string
+    buy: string
+    play: string
   }
 }
