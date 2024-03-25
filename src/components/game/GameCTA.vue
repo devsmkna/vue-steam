@@ -8,7 +8,6 @@ const { name, price, currency } = defineProps<{
   price: Price | undefined
   currency: string
 }>()
-
 </script>
 
 <template>
